@@ -35,6 +35,10 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
+	if len(input1) == len(input2):
+		return input1 + input2
+	else:
+		return len(input1) or len(input2) == 5	
 	return ""
 
 
@@ -63,6 +67,8 @@ def one(input1, input2):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
+	if bert in input:
+		return input.lower().upper().split("bert", "xx", "yy") 
 	return ""
 
 
@@ -88,7 +94,14 @@ def two(input):
 	# No Hints for this question
 
 def three(arg1):
-	return "null"
+	if arg1 % 2 == 0:
+		return "fizz"
+	elif arg1 % 5 == 0:
+		return "buzz"	
+	elif arg1 % 3 == 0 + arg1 % 5 == 0:
+		return "fizzbuzz"
+	else:
+	    return "null"
 
 
 	# <QUESTION 4>
@@ -114,6 +127,7 @@ def three(arg1):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
+
 	return 0
 
 	# <QUESTION 5>
@@ -180,7 +194,12 @@ def six(input):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    return 0
+	number_of_vowels = 0
+	the_vowels = ["a", "e", "i", "o", "u"]
+	for latter in input.lower():
+		if letter in the_vowels:
+			number_of_vowels += 1
+	return number_of_vowels
 
 	# <QUESTION 8>
 
@@ -198,7 +217,9 @@ def seven(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-	return 1
+	numbers_list = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+	if input == 0:
+		return 1
 
 	# <QUESTION 9>
 
